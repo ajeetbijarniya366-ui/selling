@@ -1,0 +1,87 @@
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+body {
+    height: 100vh; background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card {
+    width: 350px;
+    padding: 35px 30px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+
+.card h1 {
+    color: #fff;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+
+.card input {
+    width: 100%;
+    padding: 12px 15px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.85);
+    font-size: 14px;
+}
+
+
+.card button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #ff7a18;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.card button:hover {
+    background: #ff9f43;
+    transform: translateY(-2px);
+}
+
+
+.card h4 {
+    color: #f1f1f1;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card h4:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+  
