@@ -1,0 +1,111 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI, sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#28282a,#c3a16e);
+    color:white;
+}
+
+/* NAVBAR */
+
+.nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#e8a957;
+}
+
+.nav h2{
+    font-size:28px;
+}
+
+.back-btn{
+    text-decoration:none;
+    background:#d77b46;
+    color:white;
+    padding:10px 20px;
+    border-radius:6px;
+    transition:0.3s;
+}
+
+.back-btn:hover{
+    background:#c87455;
+}
+
+/* HERO */
+
+.hero{
+    text-align:center;
+    padding:60px 20px 30px;
+}
+
+.hero h1{
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    opacity:0.9;
+}
+
+/* PRODUCTS */
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+    gap:30px;
+    padding:40px 8%;
+}
+
+.card{
+    background:rgba(255,255,255,0.1);
+    border-radius:15px;
+    overflow:hidden;
+    text-align:center;
+    backdrop-filter:blur(10px);
+    transition:0.3s;
+}
+
+.card img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+}
+
+.card h3{
+    margin:15px 0 5px;
+}
+
+.card p{
+    margin-bottom:15px;
+    color:#ffd6ff;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+/* 📱 MOBILE */
+@media(max-width:600px){
+
+    .nav h2{
+        font-size:22px;
+    }
+
+    .hero h1{
+        font-size:28px;
+    }
+
+}
+
+/* 💻 TABLET */
+@media(max-width:900px){
+    .hero h1{
+        font-size:32px;
+    }
+}
