@@ -53,7 +53,7 @@ body{
     opacity:0.9;
 }
 
-/* PRODUCTS */
+
 
 .products{
     display:grid;
@@ -90,7 +90,6 @@ body{
     transform:translateY(-8px);
 }
 
-/* 📱 MOBILE */
 @media(max-width:600px){
 
     .nav h2{
@@ -103,7 +102,7 @@ body{
 
 }
 
-/* 💻 TABLET */
+
 @media(max-width:900px){
     .hero h1{
         font-size:32px;
