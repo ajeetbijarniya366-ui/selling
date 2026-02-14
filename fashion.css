@@ -1,143 +1,182 @@
-
- 
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', sans-serif;
 }
 
 body{
-    background: linear-gradient(135deg, #28282a, #c3a16e);
-    color: white;
+    background: linear-gradient(135deg,#28282a,#c3a16e);
+    color:white;
 }
+
+/* NAVBAR */
 
 .nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-    background-color: #e8a957;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 8%;
+    background:#e8a957;
 }
 
-.nav h2{
-    color: #fffcff;
-    font-size: 50px;
+.logo{
+    letter-spacing:3px;
+    font-size:clamp(22px,4vw,40px);
 }
 
 .nav-btn{
-    background: #d77b46;
-    padding: 12px 22px;
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    transition: 0.3s;
-    padding: 15px 30px;
-    text-overflow: inherit;
+    background:#d77b46;
+    padding:12px 25px;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+    transition:.3s;
 }
 
 .nav-btn:hover{
-    background: #c87455;
-    
+    background:#c87455;
 }
 
+/* HERO */
 
 .hero{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 80px 50px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:80px 8%;
+    gap:40px;
+    flex-wrap:wrap;
 }
 
 .hero-text{
-    max-width: 500px;
+    max-width:520px;
 }
 
 .hero-text h1{
-    font-size: 50px;
-    margin-bottom: 15px;
+    font-size:clamp(30px,5vw,55px);
+    margin-bottom:15px;
 }
 
 .hero-text span{
-    color: #f1b4e8;
+    background:linear-gradient(45deg,#ffd6ff,#ff9ecb,#ffe08a);
+    -webkit-background-clip:text;
+    color:transparent;
 }
 
 .hero-text p{
-    font-size: 18px;
-    color: #f2f2f2;
-    margin-bottom: 30px;
+    font-size:clamp(15px,2vw,18px);
+    margin-bottom:30px;
 }
 
-
 .hero-buttons{
-    display: flex;
-    gap: 20px;
+    display:flex;
+    gap:20px;
 }
 
 .btn{
-    padding: 14px 30px;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-    transition: 0.3s;
+    padding:14px 28px;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+    transition:.3s;
 }
 
 .primary{
-    background: #e08f6c;
-    color: white;
+    background:#e08f6c;
+    color:white;
 }
 
 .primary:hover{
-    background: #c87455;
+    background:#c87455;
 }
 
 .outline{
-    border: 2px solid #fff;
-    color: white;
+    border:2px solid white;
+    color:white;
 }
 
 .outline:hover{
-    background: white;
-    color: black;
+    background:white;
+    color:black;
 }
 
+/* IMAGE */
 
 .hero-img img{
-    width: 620px;
-    border-radius: 20px;
-    animation: float 4s ease-in-out infinite;
+    width:100%;
+    max-width:620px;
+    border-radius:20px;
+    animation:float 4s ease-in-out infinite;
 }
 
 @keyframes float{
-    0%{ transform: translateY(0); }
-    50%{ transform: translateY(-15px); }
-    100%{ transform: translateY(0); }
+    0%{transform:translateY(0);}
+    50%{transform:translateY(-15px);}
+    100%{transform:translateY(0);}
 }
 
+/* FEATURES */
 
 .features{
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    padding: 60px 50px;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:60px 8%;
+    flex-wrap:wrap;
 }
 
 .card{
-    background: rgba(255,255,255,0.1);
-    padding: 30px;
-    width: 260px;
-    text-align: center;
-    border-radius: 15px;
-    backdrop-filter: blur(10px);
-    transition: 0.3s;
+    background:rgba(255,255,255,0.1);
+    padding:30px;
+    width:260px;
+    text-align:center;
+    border-radius:15px;
+    backdrop-filter:blur(10px);
+    transition:.3s;
 }
 
 .card:hover{
-    transform: translateY(-10px);
+    transform:translateY(-10px);
 }
 
 .card i{
-    font-size: 30px;
-    color: #f1b4e8;
-    margin-bottom: 15px;
+    font-size:30px;
+    color:#f1b4e8;
+    margin-bottom:15px;
+}
+
+/* TABLET */
+
+@media (max-width:900px){
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero-buttons{
+        justify-content:center;
+    }
+
+}
+
+/* MOBILE */
+
+@media (max-width:600px){
+
+    .nav{
+        flex-direction:column;
+        gap:10px;
+        text-align:center;
+    }
+
+    .hero{
+        padding:50px 5%;
+    }
+
+    .card{
+        width:90%;
+    }
+
 }
